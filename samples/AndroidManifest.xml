@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.othelle.android.sample"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="15"/>
+
+    <application android:name=".SampleApplication" android:label="Othelle Sample" android:theme="@style/SampleTheme.Light.DarkActionBar">
+        <meta-data android:name="android.support.UI_OPTIONS" android:value="splitActionBarWhenNarrow"/>
+
+        <activity android:name=".NumberPickerActivity"
+                  android:label="Number Picker" android:theme="@style/SampleTheme.Dark">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ColorPickerActivity"
+                  android:label="Color Picker" android:theme="@style/SampleTheme.Dark">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

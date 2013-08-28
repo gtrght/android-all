@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dip"
+        >
+
+    <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/btn_star"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@android:string/copy"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/menu_icon"
+            >
+        <TextView
+                android:id="@+id/menu_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@android:string/copy"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:paddingLeft="8dip"
+                />
+
+        <TextView
+                android:id="@+id/menu_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@android:string/selectAll"
+                android:textAppearance="@android:style/TextAppearance"
+                android:paddingLeft="8dip"
+                android:paddingTop="4dip"
+                />
+    </LinearLayout>
+
+</RelativeLayout>
