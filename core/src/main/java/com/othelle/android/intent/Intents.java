@@ -27,7 +27,7 @@ public class Intents {
      *
      * @param context Application context
      */
-    public static Intent openPlayMarket(Context context) {
+    public static Intent openPlayStore(Context context) {
         return openPlayStore(context, true);
     }
 

@@ -6,7 +6,7 @@
     <version>${parent.version}</version>
     <packaging>apklib</packaging>
 
-    <name>core</name>
+    <name>Core</name>
     <url>http://maven.apache.org</url>
 
     <parent>
@@ -37,6 +37,27 @@
         <dependency>
             <groupId>com.google.android</groupId>
             <artifactId>support-v4</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.easymock</groupId>
+            <artifactId>easymock</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.robolectric</groupId>
+            <artifactId>robolectric</artifactId>
         </dependency>
     </dependencies>
 

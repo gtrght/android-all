@@ -40,6 +40,10 @@ public abstract class BaseAsyncAction<In, Out> extends AsyncAction<In, Out> impl
             }
 
             @Override
+            public void setProgress(int percentage) {
+            }
+
+            @Override
             public void started() {
                 if (showDialog) {
                     final ProgressDialog progressDialog = ProgressDialog.show(BaseAsyncAction.this.context, null, getTitle());
